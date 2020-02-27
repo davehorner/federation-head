@@ -5,14 +5,14 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 def federation_deps():
     # ********** rules_cc *****************
     http_archive(
-      name = "rules_cc",  # 2020-02-25T16:58:44Z
+      name = "rules_cc",  # 2020-02-26T15:07:44Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/bazelbuild/rules_cc/archive/52cd711ab7bb65240eae55f41cf5e4356ef49090.zip",
-           "https://github.com/bazelbuild/rules_cc/archive/52cd711ab7bb65240eae55f41cf5e4356ef49090.zip"
+           "https://github.com/bazelbuild/rules_cc/archive/be6ea43fc8b22f1c44f0ed9e9ab723dea1955238.zip",
+           "https://github.com/bazelbuild/rules_cc/archive/be6ea43fc8b22f1c44f0ed9e9ab723dea1955238.zip"
       ],
-      strip_prefix = "rules_cc-52cd711ab7bb65240eae55f41cf5e4356ef49090",
-      sha256 = "4ffed096c4be510e310e5a5efb0216e57587cd567d13ebb3e8d4a6b54da8760d",
+      strip_prefix = "rules_cc-be6ea43fc8b22f1c44f0ed9e9ab723dea1955238",
+      sha256 = "06910242c6d47c5719efd5789cf34dac393034dc0fe4c73f1ed3aac739ffabdc",
     )
 
     # ********** rules_python *****************
