@@ -65,14 +65,14 @@ def federation_deps():
 
     # ********** com_github_google_tcmalloc *****************
     http_archive(
-      name = "com_github_google_tcmalloc",  # 2020-04-17T17:32:56Z
+      name = "com_github_google_tcmalloc",  # 2020-04-19T20:14:49Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/tcmalloc/archive/e6d2785bb135bbd3996910e974a1aa57814e21aa.zip",
-           "https://github.com/google/tcmalloc/archive/e6d2785bb135bbd3996910e974a1aa57814e21aa.zip"
+           "https://github.com/google/tcmalloc/archive/22d0ada9d04ea6a691bf65b167d0c667db01f31a.zip",
+           "https://github.com/google/tcmalloc/archive/22d0ada9d04ea6a691bf65b167d0c667db01f31a.zip"
       ],
-      strip_prefix = "tcmalloc-e6d2785bb135bbd3996910e974a1aa57814e21aa",
-      sha256 = "5f920bc7394d007da53ef413f0c10e2fdc8a397c0bbb54a640b5d28970fa71ed",
+      strip_prefix = "tcmalloc-22d0ada9d04ea6a691bf65b167d0c667db01f31a",
+      sha256 = "1337ce44aba9bdf2b6b67c8ac4d1face940cd5e61e35c6ac7cf8a85a1f49773c",
     )
 
     # ********** zlib (pinned to 1.2.11) *****************
