@@ -12,31 +12,31 @@ def federation_deps():
            "https://github.com/bazelbuild/rules_cc/archive/5cbd3dfbd1613f71ef29bbb7b10310b81e272975.zip"
       ],
       strip_prefix = "rules_cc-5cbd3dfbd1613f71ef29bbb7b10310b81e272975",
-      sha256 = "d6775fe03da086dfe47c668f54e77e220aa6e601a66a4517eaf19fa1d9fda309",
+      sha256 = "556c1b6cf5e9093ed309fdfc9ffa85cfeef6bbe6e2cfd858b2ec07134484aa62",
     )
 
     # ********** rules_python *****************
     http_archive(
-      name = "rules_python",  # 2020-06-25T01:00:24Z
+      name = "rules_python",  # 2020-07-12T12:40:10Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/bazelbuild/rules_python/archive/cd552725122fdfe06a72864e21a92b5093a1857d.zip",
-           "https://github.com/bazelbuild/rules_python/archive/cd552725122fdfe06a72864e21a92b5093a1857d.zip"
+           "https://github.com/bazelbuild/rules_python/archive/32e964842b4139645417d0a8c24c807c163d7cfc.zip",
+           "https://github.com/bazelbuild/rules_python/archive/32e964842b4139645417d0a8c24c807c163d7cfc.zip"
       ],
-      strip_prefix = "rules_python-cd552725122fdfe06a72864e21a92b5093a1857d",
-      sha256 = "e4ddb2bf3c2e0ddfec5a1ab41e480661e65605c6e3c336fe85c5bd6a267dbc2e",
+      strip_prefix = "rules_python-32e964842b4139645417d0a8c24c807c163d7cfc",
+      sha256 = "3590bcb90a75c32ba8b10d692d26838caedbc267a57db23931694abc9598c873",
     )
 
     # ********** com_google_absl *****************
     http_archive(
-      name = "com_google_absl",  # 2020-07-10T23:23:10Z
+      name = "com_google_absl",  # 2020-07-12T21:21:35Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/abseil/abseil-cpp/archive/61d8bc057cacd2355be9e34aa6856b87de3c4e7f.zip",
-           "https://github.com/abseil/abseil-cpp/archive/61d8bc057cacd2355be9e34aa6856b87de3c4e7f.zip"
+           "https://github.com/abseil/abseil-cpp/archive/302b250e1d917ede77b5ff00a6fd9f28430f1563.zip",
+           "https://github.com/abseil/abseil-cpp/archive/302b250e1d917ede77b5ff00a6fd9f28430f1563.zip"
       ],
-      strip_prefix = "abseil-cpp-61d8bc057cacd2355be9e34aa6856b87de3c4e7f",
-      sha256 = "2018c9f5eb3db8a4c3aa5e52ecc00698e1dbc3e10b1c4f0233a92cd02929b5a1",
+      strip_prefix = "abseil-cpp-302b250e1d917ede77b5ff00a6fd9f28430f1563",
+      sha256 = "556c1b6cf5e9093ed309fdfc9ffa85cfeef6bbe6e2cfd858b2ec07134484aa62",
     )
 
     # ********** com_google_googletest *****************
@@ -48,7 +48,7 @@ def federation_deps():
            "https://github.com/google/googletest/archive/70b90929b1da20580cad9ed996397cf04ef8f16d.zip"
       ],
       strip_prefix = "googletest-70b90929b1da20580cad9ed996397cf04ef8f16d",
-      sha256 = "3c029c3d9c215ca87e972606f48c53363b909656f31e054195c411267821ff58",
+      sha256 = "556c1b6cf5e9093ed309fdfc9ffa85cfeef6bbe6e2cfd858b2ec07134484aa62",
     )
 
     # ********** com_github_google_benchmark *****************
@@ -60,7 +60,7 @@ def federation_deps():
            "https://github.com/google/benchmark/archive/37177a84b7e8d33696ea1e1854513cb0de3b4dc3.zip"
       ],
       strip_prefix = "benchmark-37177a84b7e8d33696ea1e1854513cb0de3b4dc3",
-      sha256 = "cd5b852873c0d8fd60aba2bdb3ebc5187b484c18c72dc885d405e33198373bca",
+      sha256 = "556c1b6cf5e9093ed309fdfc9ffa85cfeef6bbe6e2cfd858b2ec07134484aa62",
     )
 
     # ********** com_github_google_tcmalloc *****************
@@ -72,7 +72,7 @@ def federation_deps():
            "https://github.com/google/tcmalloc/archive/65bf45558405312282b71b212f77827bc16bd683.zip"
       ],
       strip_prefix = "tcmalloc-65bf45558405312282b71b212f77827bc16bd683",
-      sha256 = "3f69c8ae876310162a88cc2957265d289e468cd5d9ca0b4464fa6e50cb7b8129",
+      sha256 = "de78a2a1c47722ab165a36d29e849075e7920e925194eb8ee25f0dafab3cd01c",
     )
 
     # ********** zlib (pinned to 1.2.11) *****************
