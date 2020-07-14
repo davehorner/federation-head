@@ -17,26 +17,26 @@ def federation_deps():
 
     # ********** rules_python *****************
     http_archive(
-      name = "rules_python",  # 2020-06-25T01:00:24Z
+      name = "rules_python",  # 2020-07-12T12:40:10Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/bazelbuild/rules_python/archive/cd552725122fdfe06a72864e21a92b5093a1857d.zip",
-           "https://github.com/bazelbuild/rules_python/archive/cd552725122fdfe06a72864e21a92b5093a1857d.zip"
+           "https://github.com/bazelbuild/rules_python/archive/32e964842b4139645417d0a8c24c807c163d7cfc.zip",
+           "https://github.com/bazelbuild/rules_python/archive/32e964842b4139645417d0a8c24c807c163d7cfc.zip"
       ],
-      strip_prefix = "rules_python-cd552725122fdfe06a72864e21a92b5093a1857d",
-      sha256 = "e4ddb2bf3c2e0ddfec5a1ab41e480661e65605c6e3c336fe85c5bd6a267dbc2e",
+      strip_prefix = "rules_python-32e964842b4139645417d0a8c24c807c163d7cfc",
+      sha256 = "6874ee36cd55a2ffacf956ca60f360e12acdbe8389de1a7a624a13916da00879",
     )
 
     # ********** com_google_absl *****************
     http_archive(
-      name = "com_google_absl",  # 2020-07-10T23:23:10Z
+      name = "com_google_absl",  # 2020-07-13T19:45:13Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/abseil/abseil-cpp/archive/61d8bc057cacd2355be9e34aa6856b87de3c4e7f.zip",
-           "https://github.com/abseil/abseil-cpp/archive/61d8bc057cacd2355be9e34aa6856b87de3c4e7f.zip"
+           "https://github.com/abseil/abseil-cpp/archive/55c04eb9203a93db1c0816adddf3182b45da5384.zip",
+           "https://github.com/abseil/abseil-cpp/archive/55c04eb9203a93db1c0816adddf3182b45da5384.zip"
       ],
-      strip_prefix = "abseil-cpp-61d8bc057cacd2355be9e34aa6856b87de3c4e7f",
-      sha256 = "2018c9f5eb3db8a4c3aa5e52ecc00698e1dbc3e10b1c4f0233a92cd02929b5a1",
+      strip_prefix = "abseil-cpp-55c04eb9203a93db1c0816adddf3182b45da5384",
+      sha256 = "e4bd991c06affc84cba15ecb5f758975491b211147ec28a51ad990c4faa36a38",
     )
 
     # ********** com_google_googletest *****************
