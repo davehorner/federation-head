@@ -53,26 +53,26 @@ def federation_deps():
 
     # ********** com_github_google_benchmark *****************
     http_archive(
-      name = "com_github_google_benchmark",  # 2020-09-12T15:56:43Z
+      name = "com_github_google_benchmark",  # 2020-09-21T10:25:28Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/benchmark/archive/7efada2dac40e9f6e5c5f76e0c4a78c85c0a3af5.zip",
-           "https://github.com/google/benchmark/archive/7efada2dac40e9f6e5c5f76e0c4a78c85c0a3af5.zip"
+           "https://github.com/google/benchmark/archive/949f5bb11fb36ac0108c8e1cd238f738a24265f4.zip",
+           "https://github.com/google/benchmark/archive/949f5bb11fb36ac0108c8e1cd238f738a24265f4.zip"
       ],
-      strip_prefix = "benchmark-7efada2dac40e9f6e5c5f76e0c4a78c85c0a3af5",
-      sha256 = "736506de96a1475885ccc4ed104b071ee8bb9727c899da40bbebf82ae379900a",
+      strip_prefix = "benchmark-949f5bb11fb36ac0108c8e1cd238f738a24265f4",
+      sha256 = "0b6c479941e680362b3d76dfc93fd391ffb4ccf297983d3cf1ef819e0af17ea9",
     )
 
     # ********** com_github_google_tcmalloc *****************
     http_archive(
-      name = "com_github_google_tcmalloc",  # 2020-09-20T14:59:02Z
+      name = "com_github_google_tcmalloc",  # 2020-09-22T01:14:40Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/tcmalloc/archive/681c793acd3f37f3f51e9db6fc62487ff8f02a72.zip",
-           "https://github.com/google/tcmalloc/archive/681c793acd3f37f3f51e9db6fc62487ff8f02a72.zip"
+           "https://github.com/google/tcmalloc/archive/6c044f6927baeb914c8d1e80a4189a17a0ce03df.zip",
+           "https://github.com/google/tcmalloc/archive/6c044f6927baeb914c8d1e80a4189a17a0ce03df.zip"
       ],
-      strip_prefix = "tcmalloc-681c793acd3f37f3f51e9db6fc62487ff8f02a72",
-      sha256 = "1763866be3bf7c9127cde6d3229eb517692e805003fdcf5a80371ba4f6c0fc43",
+      strip_prefix = "tcmalloc-6c044f6927baeb914c8d1e80a4189a17a0ce03df",
+      sha256 = "80cab29324b27ff42170bd63121a3c8b39383fa3d46e1b08468607c98ae4226a",
     )
 
     # ********** zlib (pinned to 1.2.11) *****************
