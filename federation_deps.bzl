@@ -29,50 +29,50 @@ def federation_deps():
 
     # ********** com_google_absl *****************
     http_archive(
-      name = "com_google_absl",  # 2020-11-03T19:19:50Z
+      name = "com_google_absl",  # 2020-11-05T19:17:56Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/abseil/abseil-cpp/archive/e9e9b9fc74388482ab748cad33cd9732a2b75d31.zip",
-           "https://github.com/abseil/abseil-cpp/archive/e9e9b9fc74388482ab748cad33cd9732a2b75d31.zip"
+           "https://github.com/abseil/abseil-cpp/archive/e96d49687d9c078f2d47356b6723c3b5715493f7.zip",
+           "https://github.com/abseil/abseil-cpp/archive/e96d49687d9c078f2d47356b6723c3b5715493f7.zip"
       ],
-      strip_prefix = "abseil-cpp-e9e9b9fc74388482ab748cad33cd9732a2b75d31",
-      sha256 = "be5e2514d7319ec67fa4d8691579736e18c2267c501db2a13aeb0423c43c960a",
+      strip_prefix = "abseil-cpp-e96d49687d9c078f2d47356b6723c3b5715493f7",
+      sha256 = "962a6373372d08b7d8fb767ea0cde08d6412db97ec9fe7682190b6a8370f3d16",
     )
 
     # ********** com_google_googletest *****************
     http_archive(
-      name = "com_google_googletest",  # 2020-11-03T03:26:39Z
+      name = "com_google_googletest",  # 2020-11-06T18:23:55Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/googletest/archive/fb98f7447e5d2e498d6458dcd5c888fdeaae82bc.zip",
-           "https://github.com/google/googletest/archive/fb98f7447e5d2e498d6458dcd5c888fdeaae82bc.zip"
+           "https://github.com/google/googletest/archive/d89b36302116233b8c6377e6e891083f41ee51c5.zip",
+           "https://github.com/google/googletest/archive/d89b36302116233b8c6377e6e891083f41ee51c5.zip"
       ],
-      strip_prefix = "googletest-fb98f7447e5d2e498d6458dcd5c888fdeaae82bc",
-      sha256 = "a38e9ab8d2c8b7d31e0bd8281505fa46349b73ddb6fc2ff8ebe0647d93d2abf3",
+      strip_prefix = "googletest-d89b36302116233b8c6377e6e891083f41ee51c5",
+      sha256 = "4a6f634652148b3f9f1f35955af66c48f6ef085599e3ca3913049ff662d43a16",
     )
 
     # ********** com_github_google_benchmark *****************
     http_archive(
-      name = "com_github_google_benchmark",  # 2020-11-03T09:08:46Z
+      name = "com_github_google_benchmark",  # 2020-11-06T09:10:04Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/benchmark/archive/d9abf017632be4a00b92cf4289539b353fcea5d2.zip",
-           "https://github.com/google/benchmark/archive/d9abf017632be4a00b92cf4289539b353fcea5d2.zip"
+           "https://github.com/google/benchmark/archive/348aa2c964494b5947c0e7f96b82c1fe844d684f.zip",
+           "https://github.com/google/benchmark/archive/348aa2c964494b5947c0e7f96b82c1fe844d684f.zip"
       ],
-      strip_prefix = "benchmark-d9abf017632be4a00b92cf4289539b353fcea5d2",
-      sha256 = "6b9aef1b984ebd8ad6d0e2e20a71a744f6564d05fa4ccb33065841b0e9c85d48",
+      strip_prefix = "benchmark-348aa2c964494b5947c0e7f96b82c1fe844d684f",
+      sha256 = "6e0657e854b2634b33ef662526c5a0d5a1925149a714eda278e5bb629a85947c",
     )
 
     # ********** com_github_google_tcmalloc *****************
     http_archive(
-      name = "com_github_google_tcmalloc",  # 2020-11-04T21:56:35Z
+      name = "com_github_google_tcmalloc",  # 2020-11-05T18:00:20Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/tcmalloc/archive/096aff717ccc52b66235419f77c87cb022b348e0.zip",
-           "https://github.com/google/tcmalloc/archive/096aff717ccc52b66235419f77c87cb022b348e0.zip"
+           "https://github.com/google/tcmalloc/archive/d8c12dd59d6728124280a0554e8822f7155f4128.zip",
+           "https://github.com/google/tcmalloc/archive/d8c12dd59d6728124280a0554e8822f7155f4128.zip"
       ],
-      strip_prefix = "tcmalloc-096aff717ccc52b66235419f77c87cb022b348e0",
-      sha256 = "a8be4eb11592f73dcb4cbb57a12c6ba9af39129c1cf8fc1b0700a3f8a2de4846",
+      strip_prefix = "tcmalloc-d8c12dd59d6728124280a0554e8822f7155f4128",
+      sha256 = "da2842313bf75eb2b58af1ab7a13c3f7fe0c5ba3bc23cef75ee241779a23d1a3",
     )
 
     # ********** zlib (pinned to 1.2.11) *****************
