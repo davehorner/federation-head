@@ -29,14 +29,14 @@ def federation_deps():
 
     # ********** com_google_absl *****************
     http_archive(
-      name = "com_google_absl",  # 2020-12-17T15:40:59Z
+      name = "com_google_absl",  # 2020-12-21T17:28:32Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/abseil/abseil-cpp/archive/e2b1bab19a782cb62bb010d1c2925ab7314fb113.zip",
-           "https://github.com/abseil/abseil-cpp/archive/e2b1bab19a782cb62bb010d1c2925ab7314fb113.zip"
+           "https://github.com/abseil/abseil-cpp/archive/8a9ef3c5da2a9064dda0ac3c61b43b87c12c50b8.zip",
+           "https://github.com/abseil/abseil-cpp/archive/8a9ef3c5da2a9064dda0ac3c61b43b87c12c50b8.zip"
       ],
-      strip_prefix = "abseil-cpp-e2b1bab19a782cb62bb010d1c2925ab7314fb113",
-      sha256 = "5a05ebca4d0dd512d3548c4a445656a499020e85d5ee3b3993ad018bcbb1a95f",
+      strip_prefix = "abseil-cpp-8a9ef3c5da2a9064dda0ac3c61b43b87c12c50b8",
+      sha256 = "0d74cc3f83fedb61719a5e0bed59046a00ef0f0b33956e7a35c27d8d76de9b4f",
     )
 
     # ********** com_google_googletest *****************
@@ -53,14 +53,14 @@ def federation_deps():
 
     # ********** com_github_google_benchmark *****************
     http_archive(
-      name = "com_github_google_benchmark",  # 2020-11-26T11:14:03Z
+      name = "com_github_google_benchmark",  # 2020-12-21T17:15:58Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/benchmark/archive/bf585a2789e30585b4e3ce6baf11ef2750b54677.zip",
-           "https://github.com/google/benchmark/archive/bf585a2789e30585b4e3ce6baf11ef2750b54677.zip"
+           "https://github.com/google/benchmark/archive/378ed8ff25c01fe55c35cad6ed1eeab02c15d49a.zip",
+           "https://github.com/google/benchmark/archive/378ed8ff25c01fe55c35cad6ed1eeab02c15d49a.zip"
       ],
-      strip_prefix = "benchmark-bf585a2789e30585b4e3ce6baf11ef2750b54677",
-      sha256 = "2a778d821997df7d8646c9c59b8edb9a573a6e04c534c01892a40aa524a7b68c",
+      strip_prefix = "benchmark-378ed8ff25c01fe55c35cad6ed1eeab02c15d49a",
+      sha256 = "b0bf2813835300169257f6f93094ba7dc2fc2f58a54993d0f19ae536219ac323",
     )
 
     # ********** com_github_google_tcmalloc *****************
