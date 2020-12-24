@@ -17,14 +17,14 @@ def federation_deps():
 
     # ********** rules_python *****************
     http_archive(
-      name = "rules_python",  # 2020-12-23T00:21:12Z
+      name = "rules_python",  # 2020-12-24T01:44:20Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/bazelbuild/rules_python/archive/f6d9b9a67878204deecda45924fbbe229a110c60.zip",
-           "https://github.com/bazelbuild/rules_python/archive/f6d9b9a67878204deecda45924fbbe229a110c60.zip"
+           "https://github.com/bazelbuild/rules_python/archive/a16432752ef33b98530f05ca86375b42059b23c0.zip",
+           "https://github.com/bazelbuild/rules_python/archive/a16432752ef33b98530f05ca86375b42059b23c0.zip"
       ],
-      strip_prefix = "rules_python-f6d9b9a67878204deecda45924fbbe229a110c60",
-      sha256 = "e20832256feb002ff80b06e65ab8a1f6f0ef6593224117406af8b9dcf5130cf2",
+      strip_prefix = "rules_python-a16432752ef33b98530f05ca86375b42059b23c0",
+      sha256 = "140630a11671b4a5b5e3f1031ff6a8e63c0740dded9c38af9fad49cf6fad00c1",
     )
 
     # ********** com_google_absl *****************
