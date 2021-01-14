@@ -29,26 +29,26 @@ def federation_deps():
 
     # ********** com_google_absl *****************
     http_archive(
-      name = "com_google_absl",  # 2021-01-12T16:57:11Z
+      name = "com_google_absl",  # 2021-01-13T20:11:55Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/abseil/abseil-cpp/archive/322ae2420d27fc96d0a8ab1167d7de33671048df.zip",
-           "https://github.com/abseil/abseil-cpp/archive/322ae2420d27fc96d0a8ab1167d7de33671048df.zip"
+           "https://github.com/abseil/abseil-cpp/archive/64461421222f8be8663c50e8e82c91c3f95a0d3c.zip",
+           "https://github.com/abseil/abseil-cpp/archive/64461421222f8be8663c50e8e82c91c3f95a0d3c.zip"
       ],
-      strip_prefix = "abseil-cpp-322ae2420d27fc96d0a8ab1167d7de33671048df",
-      sha256 = "05012198200d750f48b46a9130b8da7569a705797fbc27fb3e07bf61f5008c32",
+      strip_prefix = "abseil-cpp-64461421222f8be8663c50e8e82c91c3f95a0d3c",
+      sha256 = "41d725950d0d3ed4d00020881db84fdc79ac349d9b325ab010686c5a794a822e",
     )
 
     # ********** com_google_googletest *****************
     http_archive(
-      name = "com_google_googletest",  # 2020-12-28T18:32:06Z
+      name = "com_google_googletest",  # 2021-01-14T01:59:51Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/googletest/archive/389cb68b87193358358ae87cc56d257fd0d80189.zip",
-           "https://github.com/google/googletest/archive/389cb68b87193358358ae87cc56d257fd0d80189.zip"
+           "https://github.com/google/googletest/archive/6c58c11d5497b6ee1df3cb400ce30deb72fc28c0.zip",
+           "https://github.com/google/googletest/archive/6c58c11d5497b6ee1df3cb400ce30deb72fc28c0.zip"
       ],
-      strip_prefix = "googletest-389cb68b87193358358ae87cc56d257fd0d80189",
-      sha256 = "763e20249e76417bed7ebc44aa85fedf5fbac6f9fb6d30bddb628ab07ebf04f5",
+      strip_prefix = "googletest-6c58c11d5497b6ee1df3cb400ce30deb72fc28c0",
+      sha256 = "7f958f2f142e0733cf46437c0ae28e41c617950e4a6d5962319bb3876e41a24b",
     )
 
     # ********** com_github_google_benchmark *****************
@@ -65,14 +65,14 @@ def federation_deps():
 
     # ********** com_github_google_tcmalloc *****************
     http_archive(
-      name = "com_github_google_tcmalloc",  # 2021-01-12T19:32:13Z
+      name = "com_github_google_tcmalloc",  # 2021-01-13T20:16:14Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/tcmalloc/archive/fbd871b12607fe4a15d626233a155a4c47d2c818.zip",
-           "https://github.com/google/tcmalloc/archive/fbd871b12607fe4a15d626233a155a4c47d2c818.zip"
+           "https://github.com/google/tcmalloc/archive/1ceaf9496ea9771fc61c2e2104130ceb7f7bb9b6.zip",
+           "https://github.com/google/tcmalloc/archive/1ceaf9496ea9771fc61c2e2104130ceb7f7bb9b6.zip"
       ],
-      strip_prefix = "tcmalloc-fbd871b12607fe4a15d626233a155a4c47d2c818",
-      sha256 = "524b98d293f27b6755ef386a09a6d25176b169e1df7933de3b5b2b7598b3919a",
+      strip_prefix = "tcmalloc-1ceaf9496ea9771fc61c2e2104130ceb7f7bb9b6",
+      sha256 = "0e0ae9766206a148943169144009c4159b7e2bd64e20d8ba39489e17273f342a",
     )
 
     # ********** zlib (pinned to 1.2.11) *****************
