@@ -41,14 +41,14 @@ def federation_deps():
 
     # ********** com_google_googletest *****************
     http_archive(
-      name = "com_google_googletest",  # 2021-01-14T01:59:51Z
+      name = "com_google_googletest",  # 2021-01-15T20:54:03Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/googletest/archive/6c58c11d5497b6ee1df3cb400ce30deb72fc28c0.zip",
-           "https://github.com/google/googletest/archive/6c58c11d5497b6ee1df3cb400ce30deb72fc28c0.zip"
+           "https://github.com/google/googletest/archive/d128fc8252d53baad6ea456fa08cbf9028d255f4.zip",
+           "https://github.com/google/googletest/archive/d128fc8252d53baad6ea456fa08cbf9028d255f4.zip"
       ],
-      strip_prefix = "googletest-6c58c11d5497b6ee1df3cb400ce30deb72fc28c0",
-      sha256 = "7f958f2f142e0733cf46437c0ae28e41c617950e4a6d5962319bb3876e41a24b",
+      strip_prefix = "googletest-d128fc8252d53baad6ea456fa08cbf9028d255f4",
+      sha256 = "759cd1e778dea67ee2dcb0910d308d34dd8cc211043e301937419912e0f46e56",
     )
 
     # ********** com_github_google_benchmark *****************
