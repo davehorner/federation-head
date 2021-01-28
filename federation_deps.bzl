@@ -5,26 +5,26 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 def federation_deps():
     # ********** rules_cc *****************
     http_archive(
-      name = "rules_cc",  # 2020-11-11T13:29:11Z
+      name = "rules_cc",  # 2021-01-28T02:31:53Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/bazelbuild/rules_cc/archive/b1c40e1de81913a3c40e5948f78719c28152486d.zip",
-           "https://github.com/bazelbuild/rules_cc/archive/b1c40e1de81913a3c40e5948f78719c28152486d.zip"
+           "https://github.com/bazelbuild/rules_cc/archive/ab2abd3ddc241b4e0067c80b3bdd4e384172cd6d.zip",
+           "https://github.com/bazelbuild/rules_cc/archive/ab2abd3ddc241b4e0067c80b3bdd4e384172cd6d.zip"
       ],
-      strip_prefix = "rules_cc-b1c40e1de81913a3c40e5948f78719c28152486d",
-      sha256 = "d0c573b94a6ef20ef6ff20154a23d0efcb409fb0e1ff0979cec318dfe42f0cdd",
+      strip_prefix = "rules_cc-ab2abd3ddc241b4e0067c80b3bdd4e384172cd6d",
+      sha256 = "ad81ad11d63e97873dda3289383dd733f99f12fadeeadb14227a45e894437dd8",
     )
 
     # ********** rules_python *****************
     http_archive(
-      name = "rules_python",  # 2021-01-26T18:22:49Z
+      name = "rules_python",  # 2021-01-27T23:46:42Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/bazelbuild/rules_python/archive/0cd570e52939500065cca8e1c7baa895b4b43a4c.zip",
-           "https://github.com/bazelbuild/rules_python/archive/0cd570e52939500065cca8e1c7baa895b4b43a4c.zip"
+           "https://github.com/bazelbuild/rules_python/archive/8537cea11d867333c07c465d536778c1b7560cde.zip",
+           "https://github.com/bazelbuild/rules_python/archive/8537cea11d867333c07c465d536778c1b7560cde.zip"
       ],
-      strip_prefix = "rules_python-0cd570e52939500065cca8e1c7baa895b4b43a4c",
-      sha256 = "77a6497a8e01bd5cb9cb9e0f8a683ccaa7f8123ff8f8497ae92e1dd66cc27d58",
+      strip_prefix = "rules_python-8537cea11d867333c07c465d536778c1b7560cde",
+      sha256 = "09d08c6168b5a732cec1366392fb84f6d9f05a1019dcd126eef1150cdf63e92a",
     )
 
     # ********** com_google_absl *****************
