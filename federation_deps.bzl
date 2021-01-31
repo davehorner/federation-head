@@ -29,14 +29,14 @@ def federation_deps():
 
     # ********** com_google_absl *****************
     http_archive(
-      name = "com_google_absl",  # 2021-01-29T20:12:57Z
+      name = "com_google_absl",  # 2021-01-30T14:25:37Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/abseil/abseil-cpp/archive/a9a49560208484f1f99efdde889da6147e8722fe.zip",
-           "https://github.com/abseil/abseil-cpp/archive/a9a49560208484f1f99efdde889da6147e8722fe.zip"
+           "https://github.com/abseil/abseil-cpp/archive/184d2f8364bcb05e413ec4c72cad0cf86e712d1c.zip",
+           "https://github.com/abseil/abseil-cpp/archive/184d2f8364bcb05e413ec4c72cad0cf86e712d1c.zip"
       ],
-      strip_prefix = "abseil-cpp-a9a49560208484f1f99efdde889da6147e8722fe",
-      sha256 = "7b0a2a1b0d77e42edb4dcde1056eb10d8522659c56fd15e76ce7da4fd5750698",
+      strip_prefix = "abseil-cpp-184d2f8364bcb05e413ec4c72cad0cf86e712d1c",
+      sha256 = "46e8249a18be8968777890803b57f9d7a5e5f3b6e432951f121114161cb51427",
     )
 
     # ********** com_google_googletest *****************
