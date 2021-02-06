@@ -5,14 +5,14 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 def federation_deps():
     # ********** rules_cc *****************
     http_archive(
-      name = "rules_cc",  # 2021-01-28T02:31:53Z
+      name = "rules_cc",  # 2021-02-05T12:30:09Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/bazelbuild/rules_cc/archive/ab2abd3ddc241b4e0067c80b3bdd4e384172cd6d.zip",
-           "https://github.com/bazelbuild/rules_cc/archive/ab2abd3ddc241b4e0067c80b3bdd4e384172cd6d.zip"
+           "https://github.com/bazelbuild/rules_cc/archive/40548a2974f1aea06215272d9c2b47a14a24e556.zip",
+           "https://github.com/bazelbuild/rules_cc/archive/40548a2974f1aea06215272d9c2b47a14a24e556.zip"
       ],
-      strip_prefix = "rules_cc-ab2abd3ddc241b4e0067c80b3bdd4e384172cd6d",
-      sha256 = "ad81ad11d63e97873dda3289383dd733f99f12fadeeadb14227a45e894437dd8",
+      strip_prefix = "rules_cc-40548a2974f1aea06215272d9c2b47a14a24e556",
+      sha256 = "56ac9633c13d74cb71e0546f103ce1c58810e4a76aa8325da593ca4277908d72",
     )
 
     # ********** rules_python *****************
@@ -41,14 +41,14 @@ def federation_deps():
 
     # ********** com_google_googletest *****************
     http_archive(
-      name = "com_google_googletest",  # 2021-01-26T20:43:54Z
+      name = "com_google_googletest",  # 2021-02-05T18:41:32Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/googletest/archive/273f8cb059a4e7b089731036392422b5ef489791.zip",
-           "https://github.com/google/googletest/archive/273f8cb059a4e7b089731036392422b5ef489791.zip"
+           "https://github.com/google/googletest/archive/f3ef7e173fd0853069f16c4b5afc7e80a350604b.zip",
+           "https://github.com/google/googletest/archive/f3ef7e173fd0853069f16c4b5afc7e80a350604b.zip"
       ],
-      strip_prefix = "googletest-273f8cb059a4e7b089731036392422b5ef489791",
-      sha256 = "2b9ce7cfb1ed140cff3e9828e3948e105a5635b8579febef094ce302915a6b04",
+      strip_prefix = "googletest-f3ef7e173fd0853069f16c4b5afc7e80a350604b",
+      sha256 = "f0a69b28b9861fc1c15c7e9f5cafb811334a0c1f41b572e4013e9460c6331d4e",
     )
 
     # ********** com_github_google_benchmark *****************
