@@ -22,8 +22,8 @@ set -euox pipefail
 
 BUILD_ROOT="$(realpath $(dirname ${0})/..)"
 
-readonly GCC_DOCKER="gcr.io/google.com/absl-177019/linux_hybrid-latest:20200909"
-readonly CLANG_DOCKER="gcr.io/google.com/absl-177019/linux_hybrid-latest:20200909"
+readonly GCC_DOCKER="gcr.io/google.com/absl-177019/linux_hybrid-latest:20210525"
+readonly CLANG_DOCKER="gcr.io/google.com/absl-177019/linux_hybrid-latest:20210525"
 
 ################################### START TESTS ################################
 
@@ -46,6 +46,7 @@ for std in ${STD}; do
   "${GCC_DOCKER}" \
   /usr/local/bin/bazel test ... \
     --copt=-Werror \
+    --distdir="/bazel-distdir" \
     --keep_going \
     --show_timestamps \
     --test_output=errors
@@ -69,6 +70,7 @@ for std in ${STD}; do
   /usr/local/bin/bazel test ... \
     --copt="--gcc-toolchain=/usr/local" \
     --copt=-Werror \
+    --distdir="/bazel-distdir" \
     --keep_going \
     --linkopt="--gcc-toolchain=/usr/local" \
     --show_timestamps \
@@ -82,7 +84,7 @@ for std in ${STD}; do
 
   if [ "${std}" = "c++17" ]; then
     # As of 2020-02-28, TCMalloc requires C++17.
-    OTHER_TESTS="@com_github_google_tcmalloc//tcmalloc/...:all"
+    OTHER_TESTS="@com_github_google_tcmalloc//tcmalloc/..."
   else
     OTHER_TESTS=""
   fi
@@ -97,14 +99,15 @@ for std in ${STD}; do
   "${GCC_DOCKER}" \
   /usr/local/bin/bazel test \
     --define absl=1 \
+    --distdir="/bazel-distdir" \
     --test_tag_filters=-benchmark,-no_federation_test \
     --keep_going \
     --show_timestamps \
     --test_output=errors \
     -- \
-    @com_google_absl//absl/...:all \
-    @com_google_googletest//googletest/...:all \
-    @com_github_google_benchmark//test/...:all \
+    @com_google_absl//absl/... \
+    @com_google_googletest//googletest/... \
+    @com_github_google_benchmark//test/... \
     -@com_google_absl//absl/time/internal/cctz:time_zone_format_test \
     -@com_google_absl//absl/time/internal/cctz:time_zone_lookup_test \
     ${OTHER_TESTS}
@@ -116,7 +119,7 @@ for std in ${STD}; do
 
   if [ "${std}" = "c++17" ]; then
     # As of 2020-02-28, TCMalloc requires C++17.
-    OTHER_TESTS="@com_github_google_tcmalloc//tcmalloc/...:all"
+    OTHER_TESTS="@com_github_google_tcmalloc//tcmalloc/..."
   else
     OTHER_TESTS=""
   fi
@@ -132,6 +135,7 @@ for std in ${STD}; do
   "${CLANG_DOCKER}" \
   /usr/local/bin/bazel test \
     --copt="--gcc-toolchain=/usr/local" \
+    --distdir="/bazel-distdir" \
     --define absl=1 \
     --test_tag_filters=-benchmark,-no_federation_test \
     --keep_going \
@@ -139,9 +143,9 @@ for std in ${STD}; do
     --show_timestamps \
     --test_output=errors \
     -- \
-    @com_google_absl//absl/...:all \
-    @com_google_googletest//googletest/...:all \
-    @com_github_google_benchmark//test/...:all \
+    @com_google_absl//absl/... \
+    @com_google_googletest//googletest/... \
+    @com_github_google_benchmark//test/... \
     -@com_google_absl//absl/time/internal/cctz:time_zone_format_test \
     -@com_google_absl//absl/time/internal/cctz:time_zone_lookup_test \
     ${OTHER_TESTS}

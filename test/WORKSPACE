@@ -6,3 +6,9 @@ local_repository(
 load("@com_google_absl_oss_federation//:federation_deps.bzl", "federation_deps")
 
 federation_deps()
+
+load("@rules_fuzzing//fuzzing:repositories.bzl", "rules_fuzzing_dependencies")
+rules_fuzzing_dependencies()
+
+load("@rules_fuzzing//fuzzing:init.bzl", "rules_fuzzing_init")
+rules_fuzzing_init()
