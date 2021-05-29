@@ -53,14 +53,14 @@ def federation_deps():
 
     # ********** com_github_google_benchmark *****************
     http_archive(
-      name = "com_github_google_benchmark",  # 2021-05-21T08:48:20Z
+      name = "com_github_google_benchmark",  # 2021-05-28T10:09:18Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/benchmark/archive/db2de74cc8c34131a6f673e35751935cc1897a0d.zip",
-           "https://github.com/google/benchmark/archive/db2de74cc8c34131a6f673e35751935cc1897a0d.zip"
+           "https://github.com/google/benchmark/archive/0e1255af2fdad14e688a97450391e52b35a7a61f.zip",
+           "https://github.com/google/benchmark/archive/0e1255af2fdad14e688a97450391e52b35a7a61f.zip"
       ],
-      strip_prefix = "benchmark-db2de74cc8c34131a6f673e35751935cc1897a0d",
-      sha256 = "0b6380d26b38a7d06a578dfb286e51d804db418feef7f86a2c2af582badbfb31",
+      strip_prefix = "benchmark-0e1255af2fdad14e688a97450391e52b35a7a61f",
+      sha256 = "f1de130ece77a3d6c60d1b231c3b175d7297d5c4f868d6ecfa1d57a1e4ca688a",
     )
 
     # ********** com_github_google_tcmalloc *****************
