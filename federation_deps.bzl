@@ -41,14 +41,14 @@ def federation_deps():
 
     # ********** com_google_googletest *****************
     http_archive(
-      name = "com_google_googletest",  # 2021-07-29T03:27:05Z
+      name = "com_google_googletest",  # 2021-08-04T17:54:45Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/googletest/archive/2d924d7a971e9667d76ad09727fb2402b4f8a1e3.zip",
-           "https://github.com/google/googletest/archive/2d924d7a971e9667d76ad09727fb2402b4f8a1e3.zip"
+           "https://github.com/google/googletest/archive/5b40153003d1a5ad7b8f40cffcd09434afda3428.zip",
+           "https://github.com/google/googletest/archive/5b40153003d1a5ad7b8f40cffcd09434afda3428.zip"
       ],
-      strip_prefix = "googletest-2d924d7a971e9667d76ad09727fb2402b4f8a1e3",
-      sha256 = "23f7ba315c74f078a95586693eed72f38b4fa62102cc11b730539d3d583a99c0",
+      strip_prefix = "googletest-5b40153003d1a5ad7b8f40cffcd09434afda3428",
+      sha256 = "80395660980af4253aebbd390be70cf1a735a3ae333078a511b2e74bb811c279",
     )
 
     # ********** com_github_google_benchmark *****************
@@ -65,14 +65,14 @@ def federation_deps():
 
     # ********** com_github_google_tcmalloc *****************
     http_archive(
-      name = "com_github_google_tcmalloc",  # 2021-07-26T14:13:31Z
+      name = "com_github_google_tcmalloc",  # 2021-08-05T07:06:02Z
       urls = [
            # Use the same URL twice to trick bazel into re-trying if connection fails
-           "https://github.com/google/tcmalloc/archive/fbdfd38b2d2a210db8b64a43a54358c1f5585d5a.zip",
-           "https://github.com/google/tcmalloc/archive/fbdfd38b2d2a210db8b64a43a54358c1f5585d5a.zip"
+           "https://github.com/google/tcmalloc/archive/47de7cd2cf69b44ea8baf59588cbd704d13da52b.zip",
+           "https://github.com/google/tcmalloc/archive/47de7cd2cf69b44ea8baf59588cbd704d13da52b.zip"
       ],
-      strip_prefix = "tcmalloc-fbdfd38b2d2a210db8b64a43a54358c1f5585d5a",
-      sha256 = "bebbdee227237004903c8e5983520b12fb7995a759daca2f55a20a70da2d1757",
+      strip_prefix = "tcmalloc-47de7cd2cf69b44ea8baf59588cbd704d13da52b",
+      sha256 = "8b66a54af26a7d6835fd7696c54feb9a1fe60806353e30c1f71d09202692ac2e",
     )
 
     # ********** zlib (pinned to 1.2.11) *****************
